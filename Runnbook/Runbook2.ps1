@@ -15,3 +15,4 @@ foreach ($resourcegroup in $resourcegroups)
     $resourcegroup | Set-AzureRmResourceGroup -Tag @{Name="TestTag";Value="$testparam-$(get-date)"}
 
 }
+write-output "Done"
